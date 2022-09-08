@@ -7,4 +7,5 @@ import reactor.core.publisher.Mono;
 @Repository
 public interface IClientRepo extends ReactiveMongoRepository<Client, String> {
     public Mono<Client> findByDocumentNumber(String documentNumber);
+    public Mono<Void> deleteById(String id);
 }

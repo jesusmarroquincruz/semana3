@@ -8,16 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EurekaServer" />
-        <module name="Account" />
         <module name="config-server" />
+        <module name="Account" />
         <module name="Credit" />
         <module name="Movement" />
         <module name="prjApiGateway" />
+        <module name="api-gateway" />
         <module name="Client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Account" target="11" />
+      <module name="api-gateway" target="11" />
       <module name="Client" target="11" />
       <module name="config-server" target="11" />
       <module name="Credit" target="11" />
@@ -33,6 +35,7 @@
       <module name="Credit" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
       <module name="Movement" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="prjApiGateway" options="-parameters" />
     </option>

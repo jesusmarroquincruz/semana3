@@ -1,9 +1,12 @@
+server:
+  port: 8099
 spring:
   application:
     name: registereureka
   cloud:
     config:
       enabled: true
+      #uri: http://localhost:9972
       uri: http://localhost:8888
   security:
     user:
